@@ -7,6 +7,8 @@ Abdulhay N, McNally CP, Hsieh L, Kasinathan S, Keith A, Estes L, Karimzadeh M, U
 
 *All scripts and binaries are provided as is, without any warrenty and for use at your own risk. This is not the release of a software package. We are only providing this information and code in addition to a description of methods for making it easier to reproduce our analyses. We are __not__ providing any support for these scripts.* 
 
+The directions below describe the process for starting from BAM files output from a PacBio Sequel I or II machine and eventually calculating a posterior probability of each adenine being methylated. To recapitulate our analysis, the intermediate files can be downloaded at dx.dio.org/10.5281/zenodo.3834706. These files will be sufficient input for some/most of the analysis in XXXXXXX.ipynb
+
 Two use cases
 -------------
 We apply our method to two use cases in the paper, and they differ in the computational workflow to analyze them. The first is for sequencing samples where every DNA molecule should have the same sequence, which is the case for our *in vitro* validation experiments presented in Figure 1. The second use case is for samples from cells containing varied sequences of DNA molecules. We will refer to the first as homogeneous samples, and the second as genomic samples. The workflow for genomic samples will be presented first in each sections, and the deviations for homogeneous samples detailed at the end.
