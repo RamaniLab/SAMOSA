@@ -95,14 +95,14 @@ The code for further analyses of our results is contained in the jupyter noteboo
 
 Extracting ZMWs near predicted transcription factor binding sites
 -----------------
-We used '''zmw_selector.py''' to extract all aligned ZMWs where a portion of the alignment falls within 1000 bp of a predicted trancription factor binding site. The script takes 4 command line arguments,
+We used `zmw_selector.py` to extract all aligned ZMWs where a portion of the alignment falls within 1000 bp of a predicted trancription factor binding site. The script takes 4 command line arguments,
 a list of sites formatted as 'chrid \t site \t strand', a list valid chromosomes / chromosome sizes, an aligned, sorted, and indexed BAM file (the aligned CCS reads in this case), and an integer for the window size. The output is a tab-separated file containing the ZMW hole numbers, the alignment start, end, and strand, and the feature strand. zmw_selector.py is run as follows: 
 
-'''python ../../zmw_selector.py ${flat} ${chrom_sizes} ${bam} 1000 > ${output}'''
+```python ../../zmw_selector.py ${flat} ${chrom_sizes} ${bam} 1000 > ${output}```
 
 Extracting ZMWS that fall within specific BED intervals
 -----------------
-We used '''zmw_selector_bed.py'''
+We used `zmw_selector_bed.py` to extract all aligned ZMWs where a portion of the alignment falls within a BED interval. The script takes
 
 
 
