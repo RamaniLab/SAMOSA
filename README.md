@@ -3,11 +3,11 @@ Processing SAMOSA data
 
 The following README documents code & analyses performed in (and are largely reproduced from the methods section therein):
 
-Abdulhay N, McNally CP, Hsieh L, Kasinathan S, Keith A, Estes L, Karimzadeh M, Underwood J, Goodarzi H, Narlikar G, Ramani V. Massively multiplex single-molecule oligonucleosome footprinting. Preprint (2020)
+Abdulhay NJ, McNally CP, Hsieh LJ, Kasinathan S, Keith A, Estes LL, Karimzadeh M, Underwood JG, Goodarzi H, Narlikar GJ, Ramani V. "Massively multiplex single-molecule oligonucleosome footprinting." bioRxiv (2020)
 
-*All scripts and binaries are provided as is, without any warrenty and for use at your own risk. This is not the release of a software package. We are only providing this information and code in addition to a description of methods for making it easier to reproduce our analyses. We are __not__ providing any support for these scripts.* 
+*All scripts and binaries are provided as is, without any warranty and for use at your own risk. This is not the release of a software package. We are only providing this information and code in addition to a description of methods for making it easier to reproduce our analyses. We are __not__ providing any support for these scripts.* 
 
-The directions below describe the process for starting from BAM files output from a PacBio Sequel I or II machine and eventually calculating a posterior probability of each adenine being methylated. To recapitulate our analysis, the intermediate files can be downloaded at https://doi.org/10.5281/zenodo.3834706. These files will be sufficient input for some/most of the analysis in XXXXXXX.ipynb
+The directions below describe the process for starting from BAM files output from a PacBio Sequel I or II machine and eventually calculating a posterior probability of each adenine being methylated. To recapitulate our analysis, the intermediate files can be downloaded at https://doi.org/10.5281/zenodo.3834706. These files will be sufficient input for all of the of analyses shown in SAMOSA_analyses.ipynb
 
 Two use cases
 -------------
@@ -91,7 +91,7 @@ This numpy array is the same shape as the `_onlyT.npy` file above. The values ar
 
 Analysis of methylation calls
 -----------------
-The code for further analyses of our results is contained in the jupyter notebook file XXXXX.ipynb. This includes code to generate all results presented in the paper, and to plot each figure. The code is annotated within the notebook.
+The code for further analyses of our results is contained in the jupyter notebook file SAMOSA_analyses.ipynb. This includes code to generate all results presented in the paper, and to plot each figure. The code is annotated within the notebook.
 
 Extracting ZMWs near predicted transcription factor binding sites
 -----------------
@@ -102,7 +102,9 @@ a list of sites formatted as 'chrid \t site \t strand', a list valid chromosomes
 
 Extracting ZMWS that fall within specific BED intervals
 -----------------
-We used `zmw_selector_bed.py` to extract all aligned ZMWs where a portion of the alignment falls within a BED interval. The script takes
+We used `zmw_selector_bed.py` to extract all aligned ZMWs where a portion of the alignment falls within a BED interval. The script takes 4 command line arguments: a GZIPPED BED File, a list of valid chromosomes and sizes, the aligned, sorted, and indexed CCS BAM file, and label. The output is a tab-separated file containing the ZMW hole numbers, the alignment start and end, and the provided label.
+
+```python ../../zmw_selector_bed.py ${bed.gz} ${chrom_sizes} ${bam} ${bed}  > ${output}```
 
 
 
