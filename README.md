@@ -92,3 +92,18 @@ This numpy array is the same shape as the `_onlyT.npy` file above. The values ar
 Analysis of methylation calls
 -----------------
 The code for further analyses of our results is contained in the jupyter notebook file XXXXX.ipynb. This includes code to generate all results presented in the paper, and to plot each figure. The code is annotated within the notebook.
+
+Extracting ZMWs near predicted transcription factor binding sites
+-----------------
+We used '''zmw_selector.py''' to extract all aligned ZMWs where a portion of the alignment falls within 1000 bp of a predicted trancription factor binding site. The script takes 4 command line arguments,
+a list of sites formatted as 'chrid \t site \t strand', a list valid chromosomes / chromosome sizes, an aligned, sorted, and indexed BAM file (the aligned CCS reads in this case), and an integer for the window size. The output is a tab-separated file containing the ZMW hole numbers, the alignment start, end, and strand, and the feature strand. zmw_selector.py is run as follows: 
+
+'''python ../../zmw_selector.py ${flat} ${chrom_sizes} ${bam} 1000 > ${output}'''
+
+Extracting ZMWS that fall within specific BED intervals
+-----------------
+We used '''zmw_selector_bed.py'''
+
+
+
+
