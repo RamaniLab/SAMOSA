@@ -7,7 +7,7 @@ Abdulhay N, McNally CP, Hsieh L, Kasinathan S, Keith A, Estes L, Karimzadeh M, U
 
 *All scripts and binaries are provided as is, without any warrenty and for use at your own risk. This is not the release of a software package. We are only providing this information and code in addition to a description of methods for making it easier to reproduce our analyses. We are __not__ providing any support for these scripts.* 
 
-The directions below describe the process for starting from BAM files output from a PacBio Sequel I or II machine and eventually calculating a posterior probability of each adenine being methylated. To recapitulate our analysis, the intermediate files can be downloaded at (https://doi.org/10.5281/zenodo.3834706)[https://doi.org/10.5281/zenodo.3834706]. These files will be sufficient input for some/most of the analysis in XXXXXXX.ipynb
+The directions below describe the process for starting from BAM files output from a PacBio Sequel I or II machine and eventually calculating a posterior probability of each adenine being methylated. To recapitulate our analysis, the intermediate files can be downloaded at https://doi.org/10.5281/zenodo.3834706. These files will be sufficient input for some/most of the analysis in XXXXXXX.ipynb
 
 Two use cases
 -------------
