@@ -3,7 +3,7 @@ Processing SAMOSA data
 
 The following README documents code & analyses performed in (and are largely reproduced from the methods section therein):
 
-Abdulhay NJ, McNally CP, Hsieh LJ, Kasinathan S, Keith A, Estes LL, Karimzadeh M, Underwood JG, Goodarzi H, Narlikar GJ, Ramani V. "Massively multiplex single-molecule oligonucleosome footprinting." bioRxiv (2020)
+Abdulhay NJ*, McNally CP*, Hsieh LJ, Kasinathan S, Keith A, Estes LL, Karimzadeh M, Underwood JG, Goodarzi H, Narlikar GJ, Ramani V. "Massively multiplex single-molecule oligonucleosome footprinting." eLife (2020)
 
 *All scripts and binaries are provided as is, without any warranty and for use at your own risk. This is not the release of a software package. We are only providing this information and code in addition to a description of methods for making it easier to reproduce our analyses. We are __not__ providing any support for these scripts.* 
 
